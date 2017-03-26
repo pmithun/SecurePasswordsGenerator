@@ -1,31 +1,141 @@
-## Synopsis
+# SecurePasswordsGenerator [SPG]
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+## Summary
 
-## Code Example
+The project helps in creating multiple secure passwords that are hard to crack. The algorithm uses multiple character combinations to create a secure password. Usually people use character passwords such as lowercase only or numerical passwords such as "goodboy" or 1234567. Apparently these passwords are easily guessable by dictionary based password cracking algorithms or pseudo random password feeding algorithms.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+![picture alt](https://s9.postimg.org/3jstz1h3z/header.png)
 
-## Motivation
+However SPG uses combinations of lowercase, uppercase, mixed case, numerical, special character symbols to strengthen the password. By using multiple combinations it lowers the speed to guess the password being cracked by passowrd guessing algorithms or dictionary based password cracking algorithms. But one must not forget that passwords are still guessable in this modern times, no matter how much complex secure password algorithms we create. By using high computing devices coupled with tera flops of computing capacity one can create powerful algorithms to guess a password, but still it requires certain amount of time to crack a password. 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Our method solves one problem through another. We create randomised multi character combinations of characters, numerical as well as special characters to create complex random password with desired length.
 
-## Installation
+## Project Goal
 
-Provide code examples and explanations of how to get the project.
+1) Should have lower case characters of range a-z.
+2) Should have upper case characters of range A-Z.
+3) Should have numbers of range 0-9.
+4) Should have special characters.
+5) The final password should have atleast one of the character types.
+6) Non readable format.
+7) Repetition of characters in passwords.
+8) A minimum of 4 characters supportable.
+9) Able to create multiple passwords or bulk passwords for research purposes.
 
-## API Reference
+## Application Technology
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+The project application was created based in corePHP where the backend logic on which algorithm was created. HTML, CSS, JavaScript, Ajax for front end logic. We seemlessly used AJAX for pulling passsword data from the PHP page which reduces the page load time for the end user. 
 
-## Tests
+## Algorithm Logic
 
-Describe and show how to run the tests with code examples.
+Assuming we want secure password of 20 Characters comprising of lower case characters[a-z], upper case characters[A-Z], numbers[0-9], symbols```[~!@#$%^&*()_+[]\;\',./~{}|:\"<>?]```. To achieve this we need to follow the following procedure.
 
-## Contributors
+* **Step-1:** Create a set of lower case characters in the range of (a-z)
+* **Step-2:** Create a set of upper case characters in the range of (A-Z)
+* **Step-3:** Create a set of numbers in the range of (0-9)
+* **Step-4:** Create a set of special characters in the range of ```[~!@#$%^&*()_+[]\;\',./~{}|:\"<>?]```
+* **Step-5:** Now store all combinations into a variable.
+* **Step-6:** Get required passwords structure i.e; if we need lower case, upper case or mixed case, numbers, symbols in our resulting password.
+* **Step-7:** Randomly select a lower case character from range (a-z)
+* **Step-8:** Randomly select an upper case character from the range (A-Z)
+* **Step-9:** Randomly select a number from the range (0-9)
+* **Step-10:** Randomly select a special character from the range ```[~!@#$%^&*()_+[]\;\',./~{}|:\"<>?]```
+* **Step-11:** Once we got atleast one character of all the combinations. We can select randomly a character from the stored variable.
+* **Step-12:** Loop step-11 until we have our desired password length.
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+The output of the password will be a combination of all our character types.
 
-## License
+- - - -
 
-A short snippet describing the license (MIT, Apache, etc.)
+## Example Usage
+
+**Input:-**
+	passwords: 5
+	password length: 20
+	Should have:
+		- Mixed case characters
+		- Numbers
+		- Symbols
+		
+**O/P:-**
+```
+bO1>JLD,i6Fk{06[eeqY
+gL4+!YJ?l&SL*/#uCAVY
+zU8?Y)B2qf@?3?0zcL,d
+fR0_D2p'jY24)HDsfJ\^
+eL0:\|1Ww8wQn:Z#&~U,
+```
+
+**Input:-**
+	passwords: 5
+	password length: 20
+	Should have:
+		- lower case characters
+		
+**O/P:-**
+```
+uenalhquljggbfjaygld
+igmgzpxkbdsgiejvzpuu
+ssneujnpxyfdigpkrqdn
+gyuatobajgwdwkslkxnn
+uavndppygbgzietdahpp
+```
+**Input:-**
+	passwords: 5
+	password length: 20
+	Should have:
+		- upper case characters
+		
+**O/P:-**
+```
+QHUWWNTCXULWNLJGWILW
+SVFVGTPRFLBNUSPZTZQD
+HBFODGTJLLFEAZBABSHO
+GYJVVNGLNVLNOSWQPLZW
+YYVVGNUPTAWUEVONTSVH
+```
+**Input:-**
+	passwods: 5
+	password length: 20
+	Should have:
+		- mixed case characters
+		
+**O/P:-**
+```
+eBfpILteYagMoPpTqwtD
+hTrwYdHDBnmBJHHxIfOU
+fYgZzcIpnLSVMQJxHJEZ
+eEChdGcYCTcfpoaFEIVe
+cJkGcoURjKuPKyMgrYrT
+```
+**Input:-**
+	passwords: 5
+	password length: 20
+	Should have:
+		- Mixed Case Characters
+		- Numbers
+		
+**O/P:-**
+```
+tL0hxEkhT71cFnN74eDD
+rX8QbGTlPsIdZdu4njF0
+bK0AdnCVBxPC7piKWP2U
+rZ3dXcCf4lT5opjlDKj6
+wB7Yf7t1zl3RFd7ANzBM
+```
+**Input:-**
+	passwords: 5
+	password length: 20
+	Should have:
+		- Mixed Case Characters
+		- Numbers
+		- Symbols
+		
+**O/P:-**
+```
+mP8+BQkD(G%Umj7YjfGV
+xC7~wTQqGnCY:J[vvd:\
+yM1[AWP7?XxYzG0%'C;B
+yG0:yX~Pd?8$>>T&DEll
+tJ0>W?t+FUj_M^~URgKd
+```
