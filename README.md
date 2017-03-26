@@ -60,12 +60,12 @@ The output of the password will be a combination of all our character types.
 
 **Input:-**
 
-	* **passwords:** 5
-	* **password length:** 20
-	* **Should have:**
-		* Mixed case characters
-		* Numbers
-		* Symbols
+* **passwords:** 5
+* **password length:** 20
+* **Should have:**
+	* Mixed case characters
+ 	* Numbers
+ 	* Symbols
 		
 **O/P:-**
 ```
@@ -78,10 +78,10 @@ eL0:\|1Ww8wQn:Z#&~U,
 
 **Input:-**
 
-	* **passwords:** 5
-	* **password length:** 20
-	* **Should have:**
-		* lower case characters
+* **passwords:** 5
+* **password length:** 20
+* **Should have:**
+	* lower case characters
 		
 **O/P:-**
 ```
@@ -93,10 +93,10 @@ uavndppygbgzietdahpp
 ```
 **Input:-**
 	
-	* **passwords:** 5
-	* **password length:** 20
-	* **Should have:**
-		* upper case characters
+* **passwords:** 5
+* **password length:** 20
+* **Should have:**
+	* upper case characters
 		
 **O/P:-**
 ```
@@ -108,10 +108,10 @@ YYVVGNUPTAWUEVONTSVH
 ```
 **Input:-**
 
-	* **passwods:** 5
-	* **password length:** 20
-	* **Should have:**
-		* mixed case characters
+* **passwods:** 5
+* **password length:** 20
+* **Should have:**
+	* mixed case characters
 		
 **O/P:-**
 ```
@@ -123,11 +123,11 @@ cJkGcoURjKuPKyMgrYrT
 ```
 **Input:-**
 	
-	* **passwords:** 5
-	* **password length:** 20
-	* **Should have:**
-		* Mixed Case Characters
-		* Numbers
+* **passwords:** 5
+* **password length:** 20
+* **Should have:**
+	* Mixed Case Characters
+	* Numbers
 		
 **O/P:-**
 ```
@@ -139,12 +139,12 @@ wB7Yf7t1zl3RFd7ANzBM
 ```
 **Input:-**
 	
-	* **passwords:** 5
-	* **password length:** 20
-	* **Should have:**
-		* Mixed Case Characters
-		* Numbers
-		* Symbols
+* **passwords:** 5
+* **password length:** 20
+* **Should have:**
+	* Mixed Case Characters
+	* Numbers
+	* Symbols
 		
 **O/P:-**
 ```
