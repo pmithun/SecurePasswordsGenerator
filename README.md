@@ -4,7 +4,16 @@
 
 The project helps in creating multiple secure passwords that are hard to crack. The algorithm uses multiple character combinations to create a secure password. Usually people use character passwords such as lowercase only or numerical passwords such as "goodboy" or 1234567. Apparently these passwords are easily guessable by dictionary based password cracking algorithms or pseudo random password feeding algorithms.
 
+- - - -
+
+## DEMO
+
+Please do visit the <a href="http://www.spg-serve.byethost10.com">following URL</a> to access the project. For security professionals who disabled scripts in your browser should enable javascript to access the full functionality of the webpage.
+
+- - - -
+
 ![picture alt](https://s9.postimg.org/3jstz1h3z/header.png)
+
 
 However SPG uses combinations of lowercase, uppercase, mixed case, numerical, special character symbols to strengthen the password. By using multiple combinations it lowers the speed to guess the password being cracked by passowrd guessing algorithms or dictionary based password cracking algorithms. But one must not forget that passwords are still guessable in this modern times, no matter how much complex secure password algorithms we create. By using high computing devices coupled with tera flops of computing capacity one can create powerful algorithms to guess a password, but still it requires certain amount of time to crack a password. 
 
@@ -50,12 +59,13 @@ The output of the password will be a combination of all our character types.
 ## Example Usage
 
 **Input:-**
-	passwords: 5
-	password length: 20
-	Should have:
-		- Mixed case characters
-		- Numbers
-		- Symbols
+
+	* **passwords:** 5
+	* **password length:** 20
+	* **Should have:**
+		* Mixed case characters
+		* Numbers
+		* Symbols
 		
 **O/P:-**
 ```
@@ -67,10 +77,11 @@ eL0:\|1Ww8wQn:Z#&~U,
 ```
 
 **Input:-**
-	passwords: 5
-	password length: 20
-	Should have:
-		- lower case characters
+
+	* **passwords:** 5
+	* **password length:** 20
+	* **Should have:**
+		* lower case characters
 		
 **O/P:-**
 ```
@@ -81,10 +92,11 @@ gyuatobajgwdwkslkxnn
 uavndppygbgzietdahpp
 ```
 **Input:-**
-	passwords: 5
-	password length: 20
-	Should have:
-		- upper case characters
+	
+	* **passwords:** 5
+	* **password length:** 20
+	* **Should have:**
+		* upper case characters
 		
 **O/P:-**
 ```
@@ -95,10 +107,11 @@ GYJVVNGLNVLNOSWQPLZW
 YYVVGNUPTAWUEVONTSVH
 ```
 **Input:-**
-	passwods: 5
-	password length: 20
-	Should have:
-		- mixed case characters
+
+	* **passwods:** 5
+	* **password length:** 20
+	* **Should have:**
+		* mixed case characters
 		
 **O/P:-**
 ```
@@ -109,11 +122,12 @@ eEChdGcYCTcfpoaFEIVe
 cJkGcoURjKuPKyMgrYrT
 ```
 **Input:-**
-	passwords: 5
-	password length: 20
-	Should have:
-		- Mixed Case Characters
-		- Numbers
+	
+	* **passwords:** 5
+	* **password length:** 20
+	* **Should have:**
+		* Mixed Case Characters
+		* Numbers
 		
 **O/P:-**
 ```
@@ -124,12 +138,13 @@ rZ3dXcCf4lT5opjlDKj6
 wB7Yf7t1zl3RFd7ANzBM
 ```
 **Input:-**
-	passwords: 5
-	password length: 20
-	Should have:
-		- Mixed Case Characters
-		- Numbers
-		- Symbols
+	
+	* **passwords:** 5
+	* **password length:** 20
+	* **Should have:**
+		* Mixed Case Characters
+		* Numbers
+		* Symbols
 		
 **O/P:-**
 ```
